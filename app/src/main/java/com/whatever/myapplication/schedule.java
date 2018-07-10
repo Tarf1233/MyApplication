@@ -21,37 +21,63 @@ import java.util.ArrayList;
 public class schedule extends Fragment {
 
 
-    public schedule() {
+        public schedule() {
 
-    }
-
-
-    @Override
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_schedule, container, false);
-
-       String[] itens = {"1", "2"};
-
-       ListView list = (ListView) view.findViewById(R.id.listt);
+        }
 
 
-       ArrayAdapter<String> ListViewAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, itens);
+        @Override
 
-      list.setAdapter(ListViewAdapter);
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
 
-        return view;
-    }
+                View view = inflater.inflate(R.layout.fragment_schedule, container, false);
+
+                ListView lista = (ListView) view.findViewById(R.id.listt);
+
+                Context context = inflater.getContext();
+
+                ArrayAdapter adapter = new Listadapter(getActivity(), addList());
+                lista.setAdapter(adapter);
+
+                return view;
+        }
 
 
 
 
 
+        public ArrayList<Listobj> addList(){
+                ArrayList<Listobj>  oficinass = new ArrayList<Listobj>();
+
+                Listobj e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
+
+                e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
 
 
+                e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
+
+                e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
+
+                e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
+
+                e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
+
+                e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
+                oficinass.add(e);
+
+
+                return oficinass;
+
+
+
+        }
 
 
 }
-
