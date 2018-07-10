@@ -30,6 +30,12 @@ public class Listadapter extends ArrayAdapter<Listobj> {
         TextView description = (TextView) rowView.findViewById(R.id.descriptionn);
         TextView hourr = (TextView) rowView.findViewById(R.id.hourr);
         TextView namee = (TextView) rowView.findViewById(R.id.namee);
+
+
+        dataa.setText(elementos.get(position).getDatee());
+        description.setText(elementos.get(position).getDescriptionn());
+        hourr.setText(elementos.get(position).getHourr());
+        namee.setText(elementos.get(position).getNamee());
         return rowView;
 
 
