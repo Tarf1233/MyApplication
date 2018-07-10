@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
              public Adapterr(FragmentManager fm) {
                  super(fm);
-                 fragments = new ArrayList<Fragment>(2);
+                 fragments = new ArrayList<Fragment>(3);
                  fragments.add(new schedule());
                  fragments.add(new properties());
                  fragments.add(new customer());
@@ -52,7 +52,18 @@ public class MainActivity extends AppCompatActivity {
 
              @Override
              public Fragment getItem(int position) {
-                 return fragments.get(position);
+                 switch (position){
+                     case 0:
+                         return new schedule();
+                     case 1:
+                         return  new properties();
+                     case 2:
+                         return new customer();
+                     default:
+                         return null;
+
+                 }
+
              }
 
              @Override
