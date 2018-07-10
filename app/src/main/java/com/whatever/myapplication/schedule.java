@@ -31,51 +31,26 @@ public class schedule extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        ListView lista = (ListView) getActivity().findViewById(R.id.listt);
+        View view = inflater.inflate(R.layout.fragment_schedule, container, false);
 
-        Context context = inflater.getContext();
+       String[] itens = {"1", "2"};
 
-        ArrayAdapter adapter = new Listadapter(context, addList());
-        lista.setAdapter(adapter);
+       ListView list = (ListView) view.findViewById(R.id.listt);
 
-        return inflater.inflate(R.layout.fragment_schedule, container, false);
+
+       ArrayAdapter<String> ListViewAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, itens);
+
+      list.setAdapter(ListViewAdapter);
+
+        return view;
     }
 
 
 
 
 
-    public ArrayList<Listobj> addList(){
-        ArrayList<Listobj>  oficinass = new ArrayList<Listobj>();
-
-        Listobj e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
-
-        e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
 
 
-        e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
-
-        e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
-
-        e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
-
-        e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
-
-        e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
-        oficinass.add(e);
-
-
-        return oficinass;
-
-
-
-    }
 
 
 }
