@@ -16,9 +16,12 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/abas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            >
 
-            <android.support.design.widget.TabItem
+            <!--<android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Schedule" />
@@ -31,7 +34,7 @@
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Customer" />
+                android:text="Customer" />-->
         </android.support.design.widget.TabLayout>
     </LinearLayout>
 

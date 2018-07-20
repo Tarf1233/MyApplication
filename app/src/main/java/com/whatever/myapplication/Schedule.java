@@ -14,14 +14,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
-public class schedule extends Fragment {
+public class Schedule extends Fragment {
 
 
-        public schedule() {
+        public Schedule() {
 
         }
 
@@ -42,10 +38,6 @@ public class schedule extends Fragment {
 
                 return view;
         }
-
-
-
-
 
         public ArrayList<Listobj> addList(){
                 ArrayList<Listobj>  oficinass = new ArrayList<Listobj>();
@@ -72,10 +64,7 @@ public class schedule extends Fragment {
                 e = new Listobj("01", "joao", "visity on madagascar", "4:20", "5 july");
                 oficinass.add(e);
 
-
                 return oficinass;
-
-
 
         }
 
