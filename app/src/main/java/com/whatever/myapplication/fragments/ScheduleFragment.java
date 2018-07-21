@@ -1,4 +1,4 @@
-package com.whatever.myapplication;
+package com.whatever.myapplication.fragments;
 
 
 import android.content.Context;
@@ -12,12 +12,16 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.whatever.myapplication.Listadapter;
+import com.whatever.myapplication.Listobj;
+import com.whatever.myapplication.R;
+
 import java.util.ArrayList;
 
-public class Schedule extends Fragment {
+public class ScheduleFragment extends Fragment {
 
 
-        public Schedule() {
+        public ScheduleFragment() {
 
         }
 

@@ -5,36 +5,46 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.whatever.myapplication.activitys.MainActivity;
+import com.whatever.myapplication.fragments.CustomerFragment;
+import com.whatever.myapplication.fragments.PropertiesFragment;
+
+import com.whatever.myapplication.fragments.ScheduleFragment;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainFragment extends Fragment {
 
 
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
     private SectionsPagerAdapter sectionsPagerAdapter;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle savedInstanceState) {
+        View view = layoutInflater.inflate(R.layout.fragment_main, viewGroup, false);
 
+        sectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
+        sectionsPagerAdapter.addFragment(new ScheduleFragment(), "Schedule");
+        sectionsPagerAdapter.addFragment(new PropertiesFragment(), "Propeties");
+        sectionsPagerAdapter.addFragment(new CustomerFragment(), "Customer");
 
-        sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        sectionsPagerAdapter.addFragment(new Schedule(), "Schedule");
-        sectionsPagerAdapter.addFragment(new Properties(), "Propeties");
-        sectionsPagerAdapter.addFragment(new Customer(), "Customer");
-
-        ViewPager mViewPager = (ViewPager) findViewById(R.id.contentt);
+        ViewPager mViewPager = view.findViewById(R.id.contentt);
         mViewPager.setAdapter(sectionsPagerAdapter);
 
 
-        TabLayout mTabLayout = (TabLayout) findViewById(R.id.abas);
+        TabLayout mTabLayout = view.findViewById(R.id.abas);
         mTabLayout.setupWithViewPager(mViewPager);
 
+        return view;
     }
     private class SectionsPagerAdapter extends FragmentPagerAdapter {
         private final ArrayList<Fragment> fragmentList = new ArrayList<>();
@@ -73,8 +83,5 @@ public class MainActivity extends AppCompatActivity {
             return titleList.get(position);
         }
     }
-
-
-
 }
 
