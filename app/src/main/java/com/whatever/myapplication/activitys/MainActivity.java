@@ -20,7 +20,7 @@ import com.whatever.myapplication.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
      FragmentManager fragmentManager;
-     DrawerLayout drawerLayout;
+     static DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public DrawerLayout getDrawerLayout() {
         return drawerLayout;
     }
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

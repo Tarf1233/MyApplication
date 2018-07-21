@@ -23,10 +23,7 @@ import com.whatever.myapplication.fragments.ScheduleFragment;
 import java.util.ArrayList;
 
 public class MainFragment extends Fragment {
-
-
-    private TabLayout mTabLayout;
-    private ViewPager mViewPager;
+    private ImageView menu;
     private SectionsPagerAdapter sectionsPagerAdapter;
     @Override
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle savedInstanceState) {
@@ -40,6 +37,16 @@ public class MainFragment extends Fragment {
         ViewPager mViewPager = view.findViewById(R.id.contentt);
         mViewPager.setAdapter(sectionsPagerAdapter);
 
+        menu = view.findViewById(R.id.menu);
+        MainActivity mainActivity = new MainActivity();
+        final DrawerLayout drawerLayout = mainActivity.getDrawerLayout();
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
 
         TabLayout mTabLayout = view.findViewById(R.id.abas);
         mTabLayout.setupWithViewPager(mViewPager);
