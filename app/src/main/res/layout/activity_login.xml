@@ -92,7 +92,6 @@
                 android:background="@drawable/bg_button"
                 android:textColor="@color/colorText"
 
-
                 />
 
         </LinearLayout>

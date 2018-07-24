@@ -4,16 +4,12 @@
     android:id="@+id/idk"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".schedule">
+    android:background="@color/colorBgItem"
+    tools:context="com.whatever.myapplication.fragments.ScheduleFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
-    @+id/listt
-    @+id/Context context =
-    getContext();
-
-    <ListView
-        android:id="@+id/listt"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_schedule"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

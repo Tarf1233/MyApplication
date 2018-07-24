@@ -5,4 +5,6 @@
     <color name="colorAccent">#00FFD3</color>
     <color name="colorPressed">#00BA9A</color>
     <color name="colorText">#fff</color>
+    <color name="colorTextBlack">#000</color>
+    <color name="colorBgItem">#EDEDED</color>
 </resources>
