@@ -14,10 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
         <activity
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:name=".MainFragment"/>
+            android:name=".MainFragment"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".activitys.LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -33,9 +32,8 @@
         <activity
             android:name=".activitys.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activitys.Show360V"></activity>
     </application>
 
 </manifest>
