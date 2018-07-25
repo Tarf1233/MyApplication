@@ -31,7 +31,7 @@ public class MainFragment extends Fragment {
 
         sectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
         sectionsPagerAdapter.addFragment(new ScheduleFragment(), "Schedule");
-        sectionsPagerAdapter.addFragment(new PropertiesFragment(), "Propeties");
+        sectionsPagerAdapter.addFragment(new PropertiesFragment(), "Properties");
         sectionsPagerAdapter.addFragment(new CustomerFragment(), "Customer");
 
         ViewPager mViewPager = view.findViewById(R.id.contentt);
