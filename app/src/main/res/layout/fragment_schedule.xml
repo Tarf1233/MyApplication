@@ -7,7 +7,6 @@
     android:background="@color/colorBgItem"
     tools:context="com.whatever.myapplication.fragments.ScheduleFragment">
 
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list_schedule"
         android:layout_width="match_parent"

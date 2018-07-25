@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundGravity="top|fill_horizontal"
-    tools:context=".MainFragment">
+    tools:context=".fragments.MainFragment">
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="260dp"
@@ -22,8 +22,8 @@
             android:layout_height="26dp" />
         <ImageView
             android:id="@+id/menu"
-            android:layout_width="26dp"
-            android:layout_height="26dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginTop="12dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/menu"
