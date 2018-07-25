@@ -17,7 +17,7 @@
 
         <activity
             android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:name=".MainFragment"/>
+            android:name=".fragments.MainFragment"/>
         <activity
             android:name=".activitys.LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

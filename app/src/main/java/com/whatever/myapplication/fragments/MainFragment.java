@@ -1,4 +1,4 @@
-package com.whatever.myapplication;
+package com.whatever.myapplication.fragments;
 
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.whatever.myapplication.R;
 import com.whatever.myapplication.activitys.MainActivity;
 import com.whatever.myapplication.fragments.CustomerFragment;
 import com.whatever.myapplication.fragments.PropertiesFragment;
