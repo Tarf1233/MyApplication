@@ -44,6 +44,11 @@
             android:label="@string/title_activity_customer_show"
             android:theme="@style/MyAppTheme"
             />
+        <activity
+            android:name=".activitys.Show360V"
+            android:label="@string/show_tour"
+            android:theme="@style/MyAppTheme"
+            />
     </application>
 
 </manifest>

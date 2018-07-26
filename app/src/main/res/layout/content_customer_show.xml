@@ -157,11 +157,13 @@
 
                     />
                 <ImageView
+                    android:id="@+id/show_tour"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:padding="20dp"
                     android:layout_height="100dp"
                     android:src="@drawable/tour"
+                    android:onClick="showTour"
                     />
                 <ImageView
                     android:layout_width="0dp"

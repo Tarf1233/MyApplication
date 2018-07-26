@@ -1,11 +1,14 @@
 package com.whatever.myapplication.activitys;
 
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
@@ -15,6 +18,7 @@ import com.whatever.myapplication.R;
 
 public class CustomerShowActivity extends AppCompatActivity {
     private SliderLayout sliderLayout;
+    private ImageView imageViewTour;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +27,7 @@ public class CustomerShowActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);*/
 
         sliderLayout = findViewById(R.id.slider);
+        imageViewTour = findViewById(R.id.show_tour);
 
         TextSliderView textSliderView = new TextSliderView(this);
 
@@ -56,6 +61,11 @@ public class CustomerShowActivity extends AppCompatActivity {
         //sliderLayout.setDuration(4000);
         //sliderLayout.addOnPageChangeListener(this);
 
+
+    }
+    public void showTour(View view){
+        Intent teste = new Intent(this, Show360V.class);
+        startActivity(teste);
     }
 
 }
