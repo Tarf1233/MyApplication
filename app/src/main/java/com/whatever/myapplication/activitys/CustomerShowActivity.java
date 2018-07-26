@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.whatever.myapplication.R;
 
@@ -32,7 +33,7 @@ public class CustomerShowActivity extends AppCompatActivity {
         TextSliderView textSliderView2 = new TextSliderView(this);
 
         textSliderView2.description("Banja Luka");
-        textSliderView2.image("https://q-ecx.bstatic.com/images/hotel/max1280x900/468/46871800.jpg");
+        textSliderView2.image("https://lh-i.global.ssl.fastly.net/images/holidays/42abc0e7d35266ae9aebad33cb2ee766d7790c35/italy/sicily/palermo/nh-palermo-0.jpg");
         sliderLayout.addSlider(textSliderView2);
 
         TextSliderView textSliderView3 = new TextSliderView(this);
@@ -41,8 +42,16 @@ public class CustomerShowActivity extends AppCompatActivity {
         textSliderView3.image("https://media.iceportal.com/25684/photos/0120739_L.jpg");
         sliderLayout.addSlider(textSliderView3);
 
+        TextSliderView textSliderView4 = new TextSliderView(getApplicationContext());
+
+        textSliderView4.description("Redentor");
+        textSliderView4.image("http://media.melhoresdestinos.com.br/2017/06/cristo-redentor-800x533.jpg");
+        textSliderView4.setScaleType(BaseSliderView.ScaleType.Fit);
+        sliderLayout.addSlider(textSliderView4);
+
+        sliderLayout.startAutoCycle();
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
-        sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        //sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         //sliderLayout.setCustomAnimation(new DescriptionAnimation());
         //sliderLayout.setDuration(4000);
         //sliderLayout.addOnPageChangeListener(this);
