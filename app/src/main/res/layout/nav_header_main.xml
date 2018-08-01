@@ -3,14 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="235dp"
-    android:background="#121212"
+    android:background="#0C162B"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="0dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="30dp"
-
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
