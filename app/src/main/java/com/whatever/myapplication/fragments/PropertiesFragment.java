@@ -40,6 +40,15 @@ public class PropertiesFragment extends Fragment {
         propertiesArrayList.add(new Properties("House 2","Show house in Miami beach", "350","5","6"));
         propertiesArrayList.add(new Properties("House 3","Show house in Miami beach", "3","5","6"));
         propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
+        propertiesArrayList.add(new Properties("House 4","Show house in Miami beach", "3","5","6"));
 
         propertiesAdapter = new PropertiesAdapter(propertiesArrayList, getContext(), new PropertiesAdapter.PropertiesSetOnClickListener() {
             @Override
