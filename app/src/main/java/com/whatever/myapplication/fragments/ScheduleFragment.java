@@ -43,12 +43,26 @@ public class ScheduleFragment extends Fragment {
         Schedule schedule4 = new Schedule("20","Agos","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
         Schedule schedule5 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
 
+        Schedule schedule6 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
+        Schedule schedule7 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
+        Schedule schedule8 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
+        Schedule schedule9 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
+        Schedule schedule10 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
+        Schedule schedule11 = new Schedule("13","Deze","Meeting with Sir. John","Show houser in miami beach", "10:00 AM");
         scheduleArrayList = new ArrayList<>();
         scheduleArrayList.add(schedule);
         scheduleArrayList.add(schedule2);
         scheduleArrayList.add(schedule3);
         scheduleArrayList.add(schedule4);
         scheduleArrayList.add(schedule5);
+
+        scheduleArrayList.add(schedule6);
+        scheduleArrayList.add(schedule7);
+        scheduleArrayList.add(schedule8);
+        scheduleArrayList.add(schedule9);
+        scheduleArrayList.add(schedule10);
+        scheduleArrayList.add(schedule11);
+
 
         scheduleAdapter = new ScheduleAdapter(scheduleArrayList, getContext(), new ScheduleAdapter.ScheduleSetOnClickListener() {
             @Override

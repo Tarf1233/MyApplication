@@ -51,7 +51,7 @@
             android:theme="@style/MyAppTheme"
             />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activitys.Show360V"
             android:label="@string/show_tour"
             android:theme="@style/MyAppTheme"

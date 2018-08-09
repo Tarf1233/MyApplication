@@ -38,6 +38,17 @@ public class CustomerFragment extends Fragment {
         customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
         customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
         customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+        customerArrayList.add(new Customer("Gal Gadot","Petah Tikva - Israel"));
+
 
         customerAdapter = new CustomerAdapter(customerArrayList, getContext(), new CustomerAdapter.CustomerSetOnClickListener() {
             @Override
