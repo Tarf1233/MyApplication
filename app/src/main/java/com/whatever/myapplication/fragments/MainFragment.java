@@ -38,16 +38,16 @@ public class MainFragment extends Fragment {
 
         sectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
         sectionsPagerAdapter.addFragment(new HomeFragment(), "");
-        sectionsPagerAdapter.addFragment(new CustomerFragment(), "");
+        /*sectionsPagerAdapter.addFragment(new CustomerFragment(), "");
         sectionsPagerAdapter.addFragment(new PropertiesFragment(), "");
-        sectionsPagerAdapter.addFragment(new ScheduleFragment(), "");
+        sectionsPagerAdapter.addFragment(new ScheduleFragment(), "");*/
 
         ViewPager mViewPager = view.findViewById(R.id.content_main_vp);
         mViewPager.setAdapter(sectionsPagerAdapter);
 
         mTabLayout = view.findViewById(R.id.abas_menu);
         mTabLayout.setupWithViewPager(mViewPager);
-        setIconsTab();
+        //setIconsTab();
 
         return view;
     }

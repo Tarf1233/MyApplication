@@ -21,12 +21,22 @@
             android:layout_weight="1"
             />
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/menu_bar"
+            >
+
+        </LinearLayout>
         <android.support.design.widget.TabLayout
             android:id="@+id/abas_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/MyMenuTheme"
             android:background="@color/colorPrimaryDark"
+            android:visibility="gone"
             app:tabMaxWidth="0dp"
             app:tabGravity="fill"
 
